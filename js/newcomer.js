@@ -35,7 +35,7 @@ const data = [
     },
 ]
 
-const htmlString = data.map(item => `<div class="card">
+const htmlString = data.map((item, index) => `<div class="card wow animate__slideInRight" data-wow-delay="${index / 3}s">
 
                                     <div class="title-wrapper">
                                     <div class="img-wrapper">

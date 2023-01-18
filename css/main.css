@@ -594,6 +594,7 @@ nav {
 
 .newcomer {
   padding-top: 200px;
+  overflow: hidden;
 }
 .newcomer .wrapper {
   display: flex;
@@ -1062,6 +1063,30 @@ footer .wrapper .column .content {
   }
 }
 @media (max-width: 650px) {
+  .popular-tools {
+    padding-top: 100px;
+  }
+  .popular-tools .load-tools {
+    padding-top: 40px;
+  }
+  .trusted {
+    padding-top: 100px;
+  }
+  .newcomer {
+    padding-top: 80px;
+  }
+  .slider {
+    padding-top: 100px;
+  }
+  .slider .swiper {
+    padding-bottom: 40px;
+  }
+  .contributor {
+    padding-top: 100px;
+  }
+  footer {
+    padding-top: 100px;
+  }
   .contributor .wrapper .input-wrapper input {
     max-width: 260px;
   }

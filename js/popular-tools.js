@@ -52,7 +52,7 @@
     },
 ]
 
-const htmlString = data.map(item => `<div class="card">
+const htmlString = data.map((item, index) => `<div class="card wow animate__fadeInUp" data-wow-delay="${index / 4}s">
 
                                     <div class="title-wrapper">
                                     <div class="img-wrapper">

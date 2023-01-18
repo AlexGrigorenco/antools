@@ -79,3 +79,10 @@ function toggle(){
     })
   }
 
+
+  //            WOW
+
+  const wow = new WOW(
+    {}
+  );
+  wow.init();
