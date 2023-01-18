@@ -1,0 +1,85 @@
+
+
+@import '_reset';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+
+
+
+/** ====================================*/
+
+:root{
+  --bg-dark: #1E252B;
+  --text-color-white: rgb(255, 255, 255);
+  --color-orange: #FF6E30;
+
+  --menu_mobile_length: 40px;
+  --menu_mobile_weight: 5px;
+  --menu_mobile_space_between: 2.2;
+  --menu_mobile_color: var(--color-orange);
+}
+
+
+body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: var(--text-color-white);
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  // font-family: 'Lora', serif;
+  // font-family: 'Roboto', sans-serif;
+
+  background: var(--bg-dark);
+}
+
+h2{
+  font-size: 48px;
+  line-height: 130%;
+}
+
+
+
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a{
+  color: var(--text-color-white);
+}
+
+.container{
+  max-width: 1254px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-right{
+  padding-left: calc((100% - 1254px)/2 + 15px);
+}
+
+.none{
+  display: none !important;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+
+@import '_nav';
+@import '_header';
+
+@import '_popular-tools';
+@import '_trusted';
+@import '_newcomer';
+
+
+@import '_media';
+

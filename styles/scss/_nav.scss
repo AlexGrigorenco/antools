@@ -1,0 +1,191 @@
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: var(--bg-dark);
+    z-index: 10;
+}
+
+.nav-wrapper {
+    position: relative;
+    padding: 26px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+
+    .nav-list {
+
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+
+        .nav-list__item {
+            position: relative;
+
+            font-weight: 500;
+            line-height: 24px;
+
+            opacity: 0.55;
+
+            &:hover{
+                transition: 0.3s linear;
+                opacity: 0.8;
+            }
+            
+            a{
+                display: block;
+                transition: 0.5s linear;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.3s linear;
+                }
+            }
+            
+
+            &:hover::after{
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                top: 4px;
+                right: -26px;
+
+                background-image: url(./../../images/nav-arrow-icon.svg);         
+
+            }
+
+        }
+
+        .nav-list__item--active{
+            position: relative;
+            opacity: 0.8;
+
+            a{
+                display: block;
+                transform: scale(1.1);
+                transition: 0.5s linear;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                top: 4px;
+                right: -26px;
+
+                background-image: url(./../../images/nav-arrow-icon.svg);
+            }
+
+        }
+    }
+
+    .bttn-wrapper{
+
+        button{
+            line-height: 24px;
+            font-weight: 600;
+            border-radius: 8px;
+
+            color: var(--text-color-white);
+
+            opacity: 0.75;
+            padding: 12px 28px;
+
+            &.active{
+                background-color: var(--color-orange);
+                opacity: 1;
+            }
+        }
+    }
+
+    .menu-icon-wrapper {
+        padding: 5px;
+        width: calc(var(--menu_mobile_length) + 10px);
+        height: calc(var(--menu_mobile_length) + 10px);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      .menu-icon {
+        position: relative;
+        width: var(--menu_mobile_length);
+        height: var(--menu_mobile_weight);
+        background-color: var(--menu_mobile_color);
+      }
+      
+      .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: calc((var(--menu_mobile_weight)*var(--menu_mobile_space_between))*-1);
+        content: '';
+        width: var(--menu_mobile_length);
+        height: var(--menu_mobile_weight);
+        background-color: var(--menu_mobile_color);
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      
+      }
+      
+      .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: calc(var(--menu_mobile_weight)*var(--menu_mobile_space_between));
+        content: '';
+        width: var(--menu_mobile_length);
+        height: var(--menu_mobile_weight);
+        background-color: var(--menu_mobile_color);
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      
+      }
+      
+      .menu-icon.menu-icon-active {
+        background-color: transparent;
+      }
+      
+      .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      
+      .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--text-color-white);
+    opacity: 0.9;
+    font-weight: 600;
+
+    transition: 0.5s linear;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s linear;
+    }
+
+    .logo-img {
+        width: 38px;
+        height: 38px;
+    }
+}
