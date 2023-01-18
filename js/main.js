@@ -65,8 +65,6 @@ function toggle(){
   //    NAV LIST
 
   {
-
-    const navListLinks = document.querySelectorAll('nav .nav-list a')
     const navListItem = document.querySelectorAll('nav .nav-list .nav-list__item')
 
     document.querySelectorAll('nav .nav-list a').forEach(elem => {
@@ -79,10 +77,5 @@ function toggle(){
             event.target.closest('.nav-list__item').classList.add('nav-list__item--active')
         })
     })
-
-    console.log(navListLinks)
-    console.log(navListItem)
-
-
   }
 
