@@ -203,7 +203,7 @@ nav {
   height: 18px;
   top: 4px;
   right: -26px;
-  background-image: url(./../../images/nav-arrow-icon.svg);
+  background-image: url(../images/nav-arrow-icon.svg);
 }
 .nav-wrapper .nav-list .nav-list__item--active {
   position: relative;
@@ -221,7 +221,7 @@ nav {
   height: 18px;
   top: 4px;
   right: -26px;
-  background-image: url(./../../images/nav-arrow-icon.svg);
+  background-image: url(../images/nav-arrow-icon.svg);
 }
 .nav-wrapper .bttn-wrapper button {
   line-height: 24px;
