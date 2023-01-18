@@ -1,0 +1,63 @@
+
+
+footer{
+    padding-top: 240px;
+
+    hr{
+        border: 0.5px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .wrapper {
+        padding: 70px 0;
+
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        .logo-block{
+            max-width: 300px;
+            padding-right: 40px;
+
+            a{
+                display: inline-block;
+            }
+
+            span{
+                padding: 10px 0;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+
+                opacity: 0.55;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .title {
+                font-size: 20px;
+            line-height: 30px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                line-height: 24px;
+                transition: 0.5s linear;
+
+                opacity: 0.55;
+            }
+        }
+        
+    }
+
+}
+
+
