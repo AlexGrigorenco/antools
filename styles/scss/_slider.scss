@@ -1,0 +1,147 @@
+
+
+.swiper-wrapper{
+}
+
+.swiper{
+    position: relative;
+    padding-bottom: 100px;
+
+    .button-next, .button-prev{
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        z-index: 10;
+        transition: 0.3s linear;
+
+        &:hover svg{
+            stroke: var(--color-orange)
+            
+        }
+
+        svg{
+            stroke: grey;
+
+        }
+    }
+
+    .button-prev{
+        left: 0;
+        transform: rotate(180deg);
+
+        &:hover{
+            transform: rotate(180deg) scale(1.1);
+            transition: 0.3s linear;
+        }
+
+    }
+
+    .button-next{
+        right: 0;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.3s linear;
+        }
+    }
+
+    .swiper-pagination{
+
+        .swiper-pagination-bullet{
+            width: 44px;
+            height: 8px;
+            border-radius: 4px;
+
+            background-color: grey;
+        }
+        .swiper-pagination-bullet-active{
+            background: var(--color-orange);
+        }
+
+    }
+}
+
+.slider{
+        padding-top: 200px;
+    
+}
+
+
+
+.swiper-slide {
+    position: relative;
+    padding: 0 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    min-width: 0;
+
+    .image-block {
+        position: relative;
+
+        .img-wrapper {
+            position: relative;
+
+
+        .decor-circle{
+            position: absolute;
+            z-index: -1;
+            top: 20%;
+        }
+
+        
+         .info {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            padding: 10px 22px;
+
+            background: rgba(40, 48, 54, 0.2);
+            backdrop-filter: blur(25px);
+            border-radius: 8px;
+
+
+            .name {
+                font-size: 26px;
+                line-height: 39px;
+                letter-spacing: 0.015em;
+            }
+            .jobtitle {
+                opacity: 0.55;
+            }
+            }
+        }
+
+    }
+
+    .text-block {
+        position: relative;
+
+        p{
+            max-width: 400px;
+            text-align: justify;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0.015em;
+
+            opacity: 0.78;
+        }
+        .img-wrapper{
+            position: absolute;
+            top: -22px;
+            left: -22px;
+
+            transform: rotate(20deg);
+
+
+        }
+    }
+}
+
+
+

@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antools.</title>
+  
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -166,15 +168,54 @@
       </div>
     </div>
   </section>
+
+  <section class="slider">
+    <div class="container">
+
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    
+  </div>
+
+
+  <!-- If we need navigation buttons -->
+  <div class="button-prev">
+    <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 26L14 14L2 2"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+  </div>
+  <div class="button-next">
+    <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 26L14 14L2 2"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+  </div>
+
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+</div>
+
+
+    </div>
+  </section>
   
  </main>
 
  <footer>
   footer
  </footer>
+      
 
-      <script src="./js/main.js"></script>
+      <script src="./libs/swiper-bundle.min.js"></script>
+      <script src="./js/slider.js"></script>
       <script src="./js/popular-tools.js"></script>
       <script src="./js/newcomer.js"></script>
+      
+      <script src="./js/main.js"></script>
 </body>
 </html>
+

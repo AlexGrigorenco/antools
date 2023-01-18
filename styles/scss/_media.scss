@@ -83,6 +83,10 @@
             }
         }
     }
+
+    .swiper-slide{
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 600px){
@@ -139,6 +143,26 @@
             .title{
                 font-size: 16px;
             }
+        }
+    }
+
+    .swiper{
+        .button-next, .button-prev{
+            display: none;
+        }
+    }
+
+    .swiper-slide{
+        padding: 0 15px;
+        .image-block{
+            .img-wrapper{
+                .info{
+                    .name{
+                        font-size: 20px;
+                    }
+                }
+            }
+            
         }
     }
 }

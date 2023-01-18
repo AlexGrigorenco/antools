@@ -18,3 +18,7 @@ document.querySelector('.menu-icon-wrapper').onclick = function(){
     document.querySelector('.nav-wrapper').classList.toggle('nav-wrapper--mobile');
     document.querySelector('body').classList.toggle('no-scroll');
 }
+
+
+
+  
