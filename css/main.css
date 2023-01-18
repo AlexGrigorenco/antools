@@ -1037,7 +1037,7 @@ footer .wrapper .column .content {
     position: absolute;
     top: 50%;
     right: 20px;
-    background-image: url(../../images/arrow-orange.svg);
+    background-image: url(../images/arrow-orange.svg);
     transform: translateY(-50%) rotate(90deg);
     transition: 0.5s linear;
   }
