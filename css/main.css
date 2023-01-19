@@ -940,6 +940,24 @@ footer .wrapper .column .content {
   transition: 0.5s linear;
   opacity: 0.55;
 }
+footer .link-to-loyout {
+  padding: 60px 0 100px 0;
+}
+footer .link-to-loyout .link {
+  display: flex;
+}
+footer .link-to-loyout .link a {
+  background: var(--color-orange);
+  border-radius: 8px;
+  padding: 8px 32px;
+  transition: 0.5s linear;
+}
+footer .link-to-loyout .link a:hover {
+  display: inline-block;
+  transform: scale(1.05);
+  transition: 0.5s linear;
+  box-shadow: 0 0 10px var(--color-orange);
+}
 
 @media (max-width: 1264px) {
   .container-right {
