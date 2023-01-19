@@ -942,6 +942,7 @@ footer .wrapper .column .content {
 }
 footer .link-to-loyout {
   padding: 60px 0 100px 0;
+  overflow: hidden;
 }
 footer .link-to-loyout .link {
   display: flex;

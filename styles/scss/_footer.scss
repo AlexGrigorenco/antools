@@ -60,9 +60,11 @@ footer{
 
     .link-to-loyout {
         padding: 60px 0 100px 0;
+        overflow: hidden;
 
         .link {
             display: flex;
+            
 
             a{
                 background: var(--color-orange);
